@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0125)https://www.jscache.com/static/gtm/gtm.html?gtmParams=&parentDomain=https%3A%2F%2Fwww.tripadvisor.com&enableGTMConsentV2=true -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Google Tag Manager -->
+    <script src="./token_create.js.download"></script><script async="" src="./main.e258cfd2.js.download"></script><script async="" src="./core.js.download"></script><script type="text/javascript" async="" src="./js"></script><script async="" src="./gtm.js.download"></script><script>
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries());
+        const gtmParams = params['gtmParams'] || "";
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                          'gtm.start':
+                              new Date().getTime(), event: 'gtm.js'
+                      });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl + gtmParams;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KHCNJRC');
+    </script>
+    <!-- End Google Tag Manager -->
+<script type="text/javascript" async="" src="./f.txt"></script><meta http-equiv="origin-trial" content="A7JYkbIvWKmS8mWYjXO12SIIsfPdI7twY91Y3LWOV/YbZmN1ZhYv8O+Zs6/IPCfBE99aV9tIC8sWZSCN09vf7gkAAACWeyJvcmlnaW4iOiJodHRwczovL2N0LnBpbnRlcmVzdC5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZzIiLCJleHBpcnkiOjE3NDIzNDIzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+<body>
+<!-- Message Communication between iframe and TA main document-->
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    // Domain from which the script is invoked
+    // Eg: webml, hare ,etc
+    const parentDomain = params['parentDomain'];
+    let messagePort; // ref to store message port for gtm communication
+    window.addEventListener('message', onMessage);
+
+    function onGTMMessage(e) {
+        window.dataLayer.push(e.data);
+    }
+
+    function onMessage(msg) {
+        if (msg.origin === parentDomain && msg.ports && msg.ports[0] && msg.data === "initGTMMessagePort") {
+            // To be removed once GTMConsentV2 is rolled out.
+            messagePort = msg.ports[0];
+            messagePort.onmessage = onGTMMessage;
+        } else if (msg.origin === parentDomain && msg.ports && msg.ports[0] && params['enableGTMConsentV2'] && msg.data && msg.data.type === "initGTMMessagePort") {
+            messagePort = msg.ports[0];
+            messagePort.onmessage = onGTMMessage;
+            gtag('consent', 'default', msg.data.consentParams);
+        }
+    }
+
+    // Do not modify/rename/remove this function. This is used by gtm template which is accessible from gtm portal(Google tag manager monitoring)
+    // https://tagmanager.google.com/#/container/accounts/6007416528/containers/67750165/workspaces/18/templates
+    function gtmMetricsCallback(data) {
+        if (messagePort) {
+            messagePort.postMessage(data);
+        }
+    }
+</script><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./saved_resource.html"></iframe>
+
+<div style="display: none; visibility: hidden;">
+  
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+  
+  
+    <script type="text/javascript">!function(b){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var a=window.pintrk;a.queue=[];a.version="3.0";a=document.createElement("script");a.async=!0;a.src=b;b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}}("https://s.pinimg.com/ct/core.js");pintrk("load","2618658214153");pintrk("page");</script>
+  
+
+</div><div style="display: none; visibility: hidden;">
+  
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+  
+  
+    <script type="text/javascript">var eventNames={geo:google_tag_manager["rm"]["67750165"](68),country:google_tag_manager["rm"]["67750165"](69),region:google_tag_manager["rm"]["67750165"](70),"aud-id":google_tag_manager["rm"]["67750165"](71)},eventCode="pagevisit";"ENTER_DATES"===google_tag_manager["rm"]["67750165"](72)?eventCode="lead":"CLICKOUT"===google_tag_manager["rm"]["67750165"](73)&&(eventCode="addtocart");pintrk("track",eventCode,eventNames);</script>
+  
+</div>
+  
+    <img src="./tr" height="1" width="1">
+    
+        <img src="./tr(1)" height="1" width="1">
+  
+<div style="display: none; visibility: hidden;">
+  
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+  
+  
+    <script type="text/javascript">var eventNames={geo:google_tag_manager["rm"]["67750165"](142),country:google_tag_manager["rm"]["67750165"](143),region:google_tag_manager["rm"]["67750165"](144),"aud-id":google_tag_manager["rm"]["67750165"](145)},eventCode="pagevisit";"ENTER_DATES"===google_tag_manager["rm"]["67750165"](146)?eventCode="lead":"CLICKOUT"===google_tag_manager["rm"]["67750165"](147)&&(eventCode="addtocart");pintrk("track",eventCode,eventNames);</script>
+  
+</div>
+  
+    <img src="./tr" height="1" width="1">
+    
+        <img src="./tr(1)" height="1" width="1">
+  
+<div style="display: none; visibility: hidden;">
+  
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+  
+  
+    <script type="text/javascript">var eventNames={geo:google_tag_manager["rm"]["67750165"](216),country:google_tag_manager["rm"]["67750165"](217),region:google_tag_manager["rm"]["67750165"](218),"aud-id":google_tag_manager["rm"]["67750165"](219)},eventCode="pagevisit";"ENTER_DATES"===google_tag_manager["rm"]["67750165"](220)?eventCode="lead":"CLICKOUT"===google_tag_manager["rm"]["67750165"](221)&&(eventCode="addtocart");pintrk("track",eventCode,eventNames);</script>
+  
+</div>
+  
+    <img src="./tr" height="1" width="1">
+    
+        <img src="./tr(1)" height="1" width="1">
+  
+</body></html>
