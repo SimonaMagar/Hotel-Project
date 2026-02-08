@@ -1,57 +1,16 @@
-// import React from "react";
-// import { useState } from "react";
-// import { CiMenuBurger } from "react-icons/ci";
-// // import {CiMenuBurger} from "react-icons/ci";
-// const Navlinks = [
-//   {
-//     title: "Home",
-//     url: "/",
-//   },
-
-//   {
-//     title: "About",
-//     url: "/about",
-//   },
-//   {
-//     title: "Contact",
-//     url: "/contact",
-//   },
-//   {
-//     title: "Services",
-//     url: "/service",
-//   },
-// ];
-
-// export default function Header() {
-//   // const [isOpen, setIsOpen] = useState(false);
-//   return (
-//     <div className="flex justify-center gap-4 items-center bg-pink-500">
-//       {Navlinks.map((el, idx) => (
-//         <a
-//           href={el.url}
-//           key={idx}
-//           className="font-medium hover:text-white transition"
-//         >
-//           {el.title}
-//         </a>
-//       ))}
-//     </div>
-//   );
-// }
 import React from "react";
 import { useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
 
-
 const NavLinks = [
   {
     title: "About",
-    url: "/",
+    url: "/about",
   },
 
   {
-    title: "Rooms & Suites",
-    url: "/rooms & suites",
+    title: "Rooms",
+    url: "/rooms",
   },
 
   {
@@ -60,11 +19,11 @@ const NavLinks = [
   },
   {
     title: "Dining",
-    url: "/services",
+    url: "/dining",
   },
   {
-    title: "Contact Us",
-    url: "/contact us",
+    title: "ContactUs",
+    url: "/contactus",
   },
 ];
 
@@ -72,14 +31,14 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header>
-      <div className="flex justify-center gap-4 items-center bg-blue-200 border-2">
+      <div className="flex justify-center gap-4 items-center bg-[#8B4513]  px-2 py-3">
         {/* desktop navbar */}
         <div className="hidden md:flex gap-6 ">
           {NavLinks.map((el, idx) => (
             <a
               href={el.url}
               key={idx}
-              className="font-medium hover:text-white transition"
+              className="font-medium text-white hover:text-white transition"
             >
               {el.title}
             </a>
@@ -94,7 +53,11 @@ export default function Header() {
       </button>
       {/* mobile navbar */}
       {isOpen && (
-        <div className="md:hidden flex flex-col ">
+        <div
+          className="flex justify-center gap-4 items-center 
+                    bg-white/80 border border-gray-300 
+                    rounded-md px-6 py-2 shadow-md w-fit mx-auto"
+        >
           {NavLinks.map((el, idx) => (
             <a
               href={el.url}
